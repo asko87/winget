@@ -19,8 +19,6 @@ $isHome = $windowsEdition -match "Home
 # -------------------------------
 # DISABLE TELEMETRY & DATA COLLECTION
 # -------------------------------
-Write-Host "Disabling telemetry and data collection..." -ForegroundColor Yellow
-
 # Set telemetry level to lowest (Security)
 if ($isPro) {
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" -Name "AllowTelemetry" -Value 0 -Force
