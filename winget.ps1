@@ -6,8 +6,6 @@ Start-Transcript -Path C:\apps.log
 # -------------------------------
 # SYSTEM CHECK & INFO
 # -------------------------------
-Write-Host "Running system checks..." -ForegroundColor Cyan
-
 # Detect Windows Edition
 $windowsEdition = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").EditionID
 Write-Host "Windows Edition: $windowsEdition"
