@@ -39,4 +39,7 @@ winget install --id=Mozilla.Firefox.ESR -e -h --disable-interactivity --accept-s
 winget install --id=Google.Chrome -e -h --disable-interactivity --accept-source-agreements --accept-package-agreements --scope machine
 winget install --id=TheDocumentFoundation.LibreOffice -e -h --disable-interactivity --accept-source-agreements --accept-package-agreements
 winget install --id=7zip.7zip -e -h --disable-interactivity --accept-source-agreements --accept-package-agreements --scope machine
+
+Get-WmiObject win32_bios | select SerialNumber
+pause
 exit
