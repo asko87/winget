@@ -4,7 +4,6 @@ Start-Transcript -Path C:\apps.log
 
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" -Name "AllowTelemetry" -Value 0 -Force
 
-# Disable telemetry services (applies to both Home and Pro)
 Stop-Service -Name "DiagTrack" -Force -ErrorAction SilentlyContinue
 Set-Service -Name "DiagTrack" -StartupType Disabled
 
