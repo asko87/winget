@@ -1,4 +1,4 @@
-# Powershell -ExecutionPolicy Bypass -command "iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/asko87/winget/blob/main/winget.ps1'))"
+# Powershell -ExecutionPolicy Bypass -command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/asko87/winget/refs/heads/main/winget.ps1'))"
 Start-Transcript -Path C:\apps.log
 
 #uninstall
